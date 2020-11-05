@@ -1,0 +1,3813 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon"
+      type="image/png"
+      href="images/favicon.png">
+    <meta charset="UTF-8">
+    <title>Leiayu Putri & Tripati Kenzo wedding</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description" content="You are invited. Leiayu Putri & Tripati Kenzo wedding" />
+    <meta name="keywords" content="undangan digital, undangan online, undangan nikah, website undangan, pernikahan, wedding, marriage" />
+    <meta name="author" content="nikahankami (admin@nikahankami.com)" />
+    <meta name="robots" content="follow, index" />
+    <meta property="og:image" content="https://nikahankami.com/demo/design01/images/ogthumbnail.jpg">
+    <meta property="og:image" itemprop="image" content="https://nikahankami.com/demo/design01/images/ogthumbnail.jpg">
+    <link itemprop="thumbnailUrl" href="https://nikahankami.com/demo/design01/images/ogthumbnail.jpg"> <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> <link itemprop="url" href="https://nikahankami.com/demo/design01/images/ogthumbnail.jpg"> </span>
+    <meta property="og:image" content="https://nikahankami.com/demo/design01/images/ogthumbnail.jpg" />
+    <meta property="og:title" content="LeiaKen Wedding Invitation" />
+    <meta property="og:description" content="Official. You are invited to nikahankami. Leiayu Putri & Tripati Kenzo" />
+    <link rel="stylesheet" href="w3style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        .w3-half img{
+            margin-bottom: -6px;
+            cursor: pointer
+            z-index: -99;
+        }
+
+        .w3-half img:hover{opacity: 0.6; transition: 0.3s}
+
+
+        /* Set height of body and the document to 100% */
+        body,
+        html {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        @font-face{
+        src: url('template/Litine.ttf');
+        font-family: litine;
+        }
+
+
+        @font-face{
+            src: url('template/Angelface.otf');
+            font-family: Angelface;
+            }
+
+        @font-face{
+            src: url('template/dosis.ttf');
+            font-family: dosis;
+        }
+
+        @font-face{
+            src: url('template/Aldine.ttf');
+            font-family: aldine;
+        }
+
+        .iconbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            /* background-color: #bababa; */
+            background-image: url("images/bgpaper.jpg")
+            overflow: auto;
+            z-index: 999999;
+        }
+
+        .iconbar a {
+            float: left;
+            width: 25%;
+            text-align: center;
+            padding-bottom: 5px;
+            color: white;
+            font-size: 30px;
+            transition: all 0.3s ease;
+        }
+
+        /* Style tab links */
+        .tablink {
+            background-image: url("images/bgpaper.jpg");
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 17px;
+            width: 25%;
+
+        }
+
+        .tablink:hover {
+            background-color: #777;
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+            color: black;
+            text-align: center;
+            display: none;
+            /* padding: 30px 20px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            height: 100%;
+            position: relative;
+        }
+
+
+        .corner1{
+            width: 200px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+
+        .corner2{
+            width: 200px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 9;
+        }
+
+        .corner3{
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 9;
+        }
+
+        .corner4{
+            width: 200px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 9;
+        }
+
+        .contentwd {
+            position: relative;
+            z-index: 99;
+        }
+
+        #Cover {
+            background-image: url("images/bgpaper.jpg");
+        }
+
+        #Couple {
+             background-image: url("images/bgpaper.jpg");
+        }
+
+        #Eventwd {
+             background-image: url("images/bgpaper.jpg");
+        }
+
+        #Moment {
+             background-image: url("images/bgpaper.jpg");
+        }
+
+        .explainbride {
+            font-family: dosis;
+        }
+
+        .bridefont {
+            font-family: litine;
+            font-size: 25px;
+        }
+
+        .fontfront {
+            font-family: aldine;
+            font-size: 70px;
+        }
+
+
+        /*** music box ***/
+        .music-box {
+        position: fixed;
+        width: 300px;
+        height: 160px;
+        z-index: 120;
+        bottom: 30px;
+        right: 30px;
+        }
+
+        @media (max-width: 991px) {
+        .music-box {
+            width: 50px;
+            height: 150px;
+            right: auto;
+            right:10px;
+            top:10px;
+        }
+        }
+
+        .music-box .music-holder {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 0;
+        top: -30px;
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+        }
+
+        .music-box .music-holder iframe {
+        width: 100%;
+        height: 100%;
+        }
+
+        .music-box button {
+        background: rgba(248, 246, 246, 0.85);
+        width: 50px;
+        line-height: 37px;
+        font-size: 18px;
+        font-size: 1rem;
+        color: #68192b;
+        border: 1px solid #e6e6e6;
+        outline: 0;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -o-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        }
+
+        .music-box button i{
+            font-size: 20px;
+        }
+
+        @media (max-width: 991px) {
+        .music-box button {
+            right: 0;
+            left: auto;
+        }
+        }
+
+        .music-box .toggle-music-box {
+        top: -50px;
+        visibility: visible;
+        opacity: 1;
+
+        }
+
+
+        .music {
+        padding: 0;
+        background: none !important;
+        border: none !important;
+        position: relative;
+        top: 100px;
+        left: 180px;
+        }
+
+        .music:focus {
+        outline: none;
+        }
+
+        .fa-stack{
+            right:12px;
+            top: -65px;
+            width: 0;
+            height: 0;
+        }
+
+        .containerijabwd {
+            margin-left: 30%;
+            text-align: left;
+            font-family: dosis;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+        .containerweddingwd {
+            margin-right: 30%;
+            text-align: right;
+            font-family: dosis;
+            font-size: 14px;
+            line-height: 1;
+        }
+
+
+        /* jam */
+        h1{
+        font-family: dosis;
+        color: #396;
+        font-weight: 100;
+        font-size: 40px;
+        margin: 40px 0px 20px;
+        }
+        #clockdiv{
+            font-family: dosis;
+            color: grey;
+            display: inline-block;
+            font-weight: 100;
+            text-align: center;
+            font-size: 30px;
+        }
+        #clockdiv > div{
+            padding: 1px;
+            border-radius: 3px;
+            /* background: #00BF96;  */
+            display: inline-block;
+        }
+        #clockdiv div > span{
+            padding: 1px;
+            border-radius: 3px;
+            /* background: #00816A;  */
+            display: inline-block;
+        }
+
+        #day {
+            font-size: 50px;
+            color: red;
+        }
+
+        .smalltext{
+            padding-top: 2px;
+            font-size: 24px;
+            font-family: Angelface;
+        }
+
+        .ornamentwdtop {
+            position: relative;
+            margin: 0 auto;
+        }
+
+        .ornamentbg{
+            position: absolute;
+            z-index: -4;
+            top: 50px;
+            width: 30%;
+            opacity: 0.3;
+        }
+
+        .ornamentbg img {
+            width: 50%;
+        }
+
+        .ornamentwdtop img {
+            width: 60%;
+        }
+
+        .ornamentwdbtm img {
+            width: 40%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .corner1 {
+                width: 150px;
+            }
+
+            .corner2 {
+                width: 150px;
+            }
+
+            .corner3 {
+                width: 150px;
+            }
+
+            .corner4 {
+                width: 150px;
+            }
+
+            .ornamentbg img {
+                width: 100%;
+            }
+
+            .ornamentwdtop img {
+                width: 100%;
+            }
+
+            .ornamentwdbtm img {
+                width: 80%;
+            }
+
+            .containerijabwd {
+                margin-left: 10%;
+            }
+
+            .containerweddingwd {
+                margin-right: 10%;
+            }
+
+        }
+
+/* comment section */
+
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+
+        input[type=submit] {
+          background-color: #e03a5e;
+          width: 100%;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+          background-color: #c42b4c;
+        }
+
+        .wishcontainer {
+            text-align: left;
+            font-family: dosis;
+        }
+
+        .wishspace {
+          border-radius: 5px;
+          /* background-color: #f2f2f2; */
+          padding: 20px;
+        }
+
+        .wishdisplay {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: dosis;
+            max-height: 400px;
+            overflow: scroll;
+        }
+
+        .wishdisplayname {
+            font-weight: bold;
+        }
+
+        /* width */
+        .wishdisplay::-webkit-scrollbar {
+          width: 4px;
+        }
+
+        /* Handle */
+        .wishdisplay::-webkit-scrollbar-thumb {
+          background: #888;
+        }
+
+        /* Handle on hover */
+        .wishdisplay::-webkit-scrollbar-thumb:hover {
+          background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="music-box">
+        <button class="music-box-toggle-btn">
+            <!--
+                <i class="fa fa-music"></i> -->
+            <audio id='song' loop>
+                <source src="template/songbiw.mp3">
+            </audio>
+
+            <button type="button" class="music" id="mute-sound">
+                <img border="0" alt="" src="images/soundmusicwd.png"
+                    width="20" height="20">
+            </button>
+            <button type="button" class="music" id="unmute-sound">
+                <img border="0" alt="" src="images/soundmusicoffwd.png"
+                    width="20" height="20">
+            </button>
+        </button>
+    </div>
+
+    <div class="iconbar">
+        <a class="tablink" onclick="openPage('Cover', this, 'red')" id="defaultOpen"><img src="images/tab1cover.png" width="35"></a>
+        <a class="tablink" onclick="openPage('Couple', this, 'green')"><img src="images/tab2couple.png" width="35"></a>
+        <a class="tablink" onclick="openPage('Eventwd', this, 'blue')"><img src="images/tab3event.png" width="35"></a>
+        <a class="tablink" onclick="openPage('Moment', this, 'orange')"><img src="images/tab4moment.png" width="35"></a>
+    </div>
+
+    <div id="Cover" class="tabcontent">
+        <!-- <h3>Home</h3>
+        <p>Home is where the heart is..</p> -->
+
+        <div class="corner1">
+            <img src="images/oraset1.png" alt="" width="100%">
+        </div>
+
+        <div class="corner2">
+            <img src="images/oraset2.png" alt="" width="100%">
+        </div>
+
+        <div class="corner3">
+            <img src="images/oraset3.png" alt="" width="100%">
+        </div>
+
+        <div class="corner4">
+            <img src="images/oraset4.png" alt="" width="100%">
+        </div>
+
+
+        <div id="homewd" class="contentwd">
+            <div class="ornamentwdtop" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/flowerize1.png" alt="" style="display: inline-block;" width="100%">
+            </div>
+
+            <div>
+                <h2 style="font-size: 35px; font-family: Angelface; padding-top: 10px">The Wedding<br><span style="font-size:12px" class="explainbride">Official Invitation</span></h2>
+            </div>
+            <div style="padding-right:30px"><span class="fontfront">Leiayu</span></div>
+            <div class="explainbride">dan</div>
+            <div style="padding-left:30px"><span class="fontfront">Tripati</span></div>
+           
+                <p style="font-weight:bold; padding-top:10px; padding-bottom:10px; border-radius:4px" id="write"></p>
+            <div>
+                <a href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzVkYWxyOWVqaGl1czdlYmxnZnQ3NmwybzggYmxrb2M5ZHFvcGs3a2trNm9nNnAzNDlzaDRAZw&tmsrc=blkoc9dqopk7kkk6og6p349sh4%40group.calendar.google.com" target="_blank" style="background-color: #e03a5e; font-family: dosis; font-size: 18px; color: white; padding: 18px 30px; text-align: center; text-decoration: none; display: inline-block; border-radius: 8px"><strong>SaveTheDate</strong></a>
+                <p style="font-size: 30px; font-family: Angelface; padding-top: 1px">| 28 . Maret . 2020 | <br><span style="font-size:12px"
+                        class="explainbride">Magelang</span></p>
+                <br>
+            </div>
+
+            <div class="ornamentbg" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/swirlwd.png" alt="" style="display: inline-block;">
+            </div>
+
+            <br>
+            <div class="ornamentwdbtm" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/flowerize2.png" alt="" style="display: inline-block;">
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+    </div>
+
+    <div id="Couple" class="tabcontent">
+        <!-- <h3>News</h3>
+        <p>Some news this fine day!</p> -->
+
+        <div class="corner1">
+            <img src="images/oraset1.png" alt="" width="100%">
+        </div>
+
+        <div class="corner2">
+            <img src="images/oraset2.png" alt="" width="100%">
+        </div>
+
+        <div class="corner3">
+            <img src="images/oraset3.png" alt="" width="100%">
+        </div>
+
+        <div class="corner4">
+            <img src="images/oraset4.png" alt="" width="100%">
+        </div>
+
+        <div id="bridewd" class="contentwd">
+
+            <div class="ornamentwdtop" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vintopwd.png" alt="" style="display: inline-block;">
+            </div>
+
+            <div>
+                <p style="font-size: 30px; font-family: Angelface; padding-top: 30px">Bismillahirrahmanirrahim</p>
+                <div class="explainbride">Assalamu`alaikum Warahmatullahi Wabarakatuh<br><br>
+                    Maha Suci Allah<br>yang telah menciptakan makhluk-Nya<br>berpasang-pasangan.<br>Ya Allah semoga ridho-Mu tercurah<br>mengiringi pernikahan putra-putri kami:</div>
+            </div>
+            <br>
+            <div><img src="images/wdbride.png" width="40%" alt=""><br><span class="bridefont">Leiayu Putri</span>
+            </div>
+            <div class="explainbride">Putri dari<br>Bpk. Adiminto R. & Ibu Sulaiyu Asih</div>
+            <br>
+            <div class="explainbride">dan</div>
+            <br>
+            <div><img src="images/wdgroom.png" width="40%" alt=""><br><span class="bridefont">Tripati Kenzo</span>
+            </div>
+            <div class="explainbride">Putra dari<br>Bpk. Adipati Zouma & Ibu Nuraini Zara</div>
+            <br>
+            <br>
+            <br>
+            <div class="ornamentwdbtm" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vinbtmwd.png" alt="" style="display: inline-block;" width="100%">
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+
+    </div>
+
+    <div id="Eventwd" class="tabcontent">
+
+        <div class="corner1">
+            <img src="images/oraset1.png" alt="" width="100%">
+        </div>
+
+        <div class="corner2">
+            <img src="images/oraset2.png" alt="" width="100%">
+        </div>
+
+        <div class="corner3">
+            <img src="images/oraset3.png" alt="" width="100%">
+        </div>
+
+        <div class="corner4">
+            <img src="images/oraset4.png" alt="" width="100%">
+        </div>
+
+
+
+        <div id="homewd" class="contentwd">
+
+            <div class="ornamentwdtop" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vintopwd.png" alt="" style="display: inline-block;" width="100%">
+            </div>
+
+            <h3 style="font-family: Angelface; font-size: 35px">Event</h3>
+            <p class="explainbride">The Happy Day!</p>
+            <br>
+            <p style="font-family: dosis">Dengan memohon rahmat dan ridho Allah Subhanahu Wa Ta'ala, kami mengundang Bapak/Ibu/Saudara(i) untuk menghadiri Resepsi Pernikahan putra-putri kami</p>
+
+
+            <div class="containerijabwd">
+                <div>
+                    <p style="font-size: 18px; font-family: dosis; padding-top: 50px"><b>Akad Pernikahan</b></p>
+                </div>
+
+                <table>
+                    <tr>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                        <td>Sabtu, 28 Maret 2020</td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                        <td>08.00 WIB</td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                        <td>Gedung Achmad Yani,</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Jl. Jend. Gatot Soebroto,</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Jurangombo Utara,</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Magelang</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <div class="containerweddingwd">
+                <div>
+                    <p style="font-size: 18px; font-family: dosis; padding-top: 10px"><b>Resepsi Pernikahan</b></p>
+                </div>
+
+                <table align="right">
+                    <tr align="right">
+                        <td>Sabtu, 28 Maret 2020</td>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr align="right">
+                        <td>13.00 - 15.00 WIB</td>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                    </tr>
+                    <tr>
+                        <td><br></td>
+                        <td><br></td>
+                    </tr>
+                    <tr align="right">
+                        <td>Gedung Achmad Yani,</td>
+                        <td><img src="images/tab1cover.png" width="15"></td>
+                    </tr>
+                    <tr align="right">
+                        <td>Jl. Jend. Gatot Soebroto,</td>
+                        <td></td>
+                    </tr>
+                    <tr align="right">
+                        <td>Jurangombo Utara,</td>
+                        <td></td>
+                    </tr>
+                    <tr align="right">
+                        <td>Magelang</td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+            <div style="clear:both"></div>
+
+            <br>
+            <br>
+            <div id="clockdiv">
+                <div>
+                    <span class="days" id="day"></span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div>
+                    <span class="hours" id="hour"></span>
+                    <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                    <span class="minutes" id="minute"></span>
+                    <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                    <span class="seconds" id="second"></span>
+                    <div class="smalltext">Seconds</div>
+                </div>
+            </div>
+
+            <p id="demo"></p>
+
+            <p class="explainbride">Merupakan suatu kehormatan dan kebahagiaan<br>bagi kami apabila Bapak/Ibu/Saudara(i)<br>berkenan hadir untuk memberikan do'a restu<br>kepada kedua mempelai.</p>
+
+            <br>
+            <br>
+
+
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.8005853713566!2d110.21351231477622!3d-7.487258394599172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8f6aa5ee45b3%3A0xdc07f0e500ac48d6!2sGedung%20Jenderal%20Achmad%20Yani%20Magelang!5e0!3m2!1sen!2sid!4v1574127059912!5m2!1sen!2sid" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+            </div>
+            <br>
+            <div><a href="https://goo.gl/maps/1bjdKs93RDBXkmKx6" target="_blank" style="background-color: #e03a5e; font-family: dosis; font-size: 18px; color: white; padding: 18px 30px; text-align: center; text-decoration: none; display: inline-block; border-radius: 8px"><strong>OpenMap</strong></a>
+            </div>
+            <br>
+
+            <div class="ornamentwdbtm" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vinbtmwd.png" alt="" style="display: inline-block;" width="100%">
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+
+
+    </div>
+
+    <div id="Moment" class="tabcontent">
+
+        <div class="corner1">
+            <img src="images/oraset1.png" alt="" width="100%">
+        </div>
+
+        <div class="corner2">
+            <img src="images/oraset2.png" alt="" width="100%">
+        </div>
+
+        <div class="corner3">
+            <img src="images/oraset3.png" alt="" width="100%">
+        </div>
+
+        <div class="corner4">
+            <img src="images/oraset4.png" alt="" width="100%">
+        </div>
+
+
+
+
+        <div id="homewd" class="contentwd">
+
+            <div class="ornamentwdtop" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vintopwd.png" alt="" style="display: inline-block;" width="100%">
+            </div>
+
+            <h3 style="font-family: Angelface; font-size: 35px">Gallery</h3>
+            <p class="explainbride">Momen Bahagia & Doa untuk LeiayuTripati</p>
+
+            <!-- !PAGE CONTENT! -->
+            <div class="w3-main w3-content" style="max-width:1600px;margin-top:20px">
+
+                <!-- Photo grid -->
+                <div class="w3-row w3-grayscale-min">
+
+                    <div class="w3-half">
+                        <img src="images/gal01.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal03.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal05.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal07.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal09.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                    </div>
+                    <div class="w3-half">
+                        <img src="images/gal02.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal04.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal06.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal08.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                        <img src="images/gal10.jpg" style="width:100%" onclick="onClick(this)"
+                            alt="LeiayuTripati">
+                    </div>
+
+                </div>
+
+                <!-- Modal for full size images on click-->
+                <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+                    <span class="w3-button w3-black w3-xlarge w3-display-topleft">×</span>
+                    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <img id="img01" class="w3-image">
+                        <p id="caption"></p>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="">
+                    <p class="explainbride">Ucapan Selamat & Doa untuk<br>Leiayu Putri & Tripati Kenzo</p>
+                </div>
+
+                <div class="wishspace">
+                    <div class="wishcontainer">
+
+
+                      <form action="" method="post">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama.." required>
+
+                        <label for="ucap">Ucapan</label>
+                        <textarea id="ucap" name="ucap" placeholder="Ucapan Doa & Harapan.." style="height:100px" required></textarea>
+
+                        <input type="submit" name="submit" value="Kirim">
+                      </form>
+                    </div>
+
+                    <br>
+
+                    <div class="wishdisplay">
+
+                                                
+                            <div class="wishdisplayname">
+                                Riyandanu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat untuk Leia dan Pati, Semoga dilancarkan segala urusannya yaa, kelak menjadi keluarga yang Sakinah Mawadah Warohmah, selalu diberikan kebahagiaan dan keberkahan selalu, serta cepet dapet momongan, aamiin                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Arini                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamaat Leia &amp; pasangan! Barakallah.. Semoga jadi keluarga sakinah, mawadah wa rahmah ya kaliaann, dijadikan jodoh sampai maut memisahkan dan dipertemukan lagi di jannahNya, semoga bahagia mendominasi hidup baru kalian dan dipercayakan keturunan yang sholeh dan sholeha, Aamiinn😇                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tikasari                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semalat ya Leia sayangg dan calon suami yang bentar lagi jadi suami.. Semoga lancar sampe hari H apapun itu.. Semoga kedepan bisa jadi keluarga kecil yang sakinah, mawaddah, &amp; warrahmah.. #hug&amp;lovefromtika                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Afiani dan Zidan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                MasyaAllah Tabrakallah semoga selalu diberikan kebahagian dan keberkahan dalam keluarga barunya ya Leiaa Putriii dan suami, segera di karuniai momongan dan Semoga jadi keluarga yg SAMAWA!😇❤❤❤                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mutiara Hanif                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Dear mbak Leia ku sayang, mbak kos paling bawel dan endel😘 Selamat telah menemukan teman hidup yg dinanti nanti sejak dulu. Semoga acaranya lancar, keduanya sehat selalu, tidak ada satu halangan apapun sampai hari H❤️❤️                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Maharani WD                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamaat Leia &amp; Ken! Barakallah.. Semoga jadi keluarga sakinah, mawadah wa rahmah ya kaliaann, dijadikan jodoh sampai maut memisahkan dan dipertemukan lagi di jannahNya, semoga bahagia mendominasi hidup baru kalian dan dipercayakan keturunan yang sholeh dan sholeha, Aamiinn😇                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tim Diyandra                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat bro Ken dan pasangan semoga dimudahkan semua acaranya sampai setelahnya dan selamanya, jadi keluarga yang sakina mawaddah warrahman, bahagia selalu sampai kematian memisahkan...                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nate was here                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Angga                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga angga bisa nyusul                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Maryam                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Barakallah ^_^                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Yyu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Maria                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat mba Leia dan mas Ken. Tuhan perlancar hingga hari H yaa :)                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Arka                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya ka, semoga lancar sampe hari H. Semoga aku bisa cepet nyusul juga taun depan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tree                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat menempuh hidup baru                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                AdindaNia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya LeiaKen, BahagiaSelalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                AdindaNia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya LeiaKen, BahagiaSelalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tonida                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat untuk Leia dan Pati, Semoga dilancarkan segala urusannya yaa, kelak menjadi keluarga yang Sakinah Mawadah Warohmah, selalu diberikan kebahagiaan dan keberkahan selalu, serta cepet dapet momongan, aamiin                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dian Kharisma                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat Kak Aiu dan Ken. Bahagia selalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Zakira Dio                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Mantap Brooo...  Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Arinda                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat menempuh hidup baru                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Nick                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Happy selalu yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Nana                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat utk Leia dan Pati.. Lancar smua persiapan smp hr H. Bahagia seterusnya. Amin                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Fahmi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya semoga menjadi keluarga yang sakinah mawadah warohmah bahagia dunia dan akhirat  dan di beri keberkahan                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ceve                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                xxx                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                xxx                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nero                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat bro                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nabil                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                dicobaa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                yayayayay ulalalalla                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl,                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl, interdum laoreet enim eu, ullamcorper accumsan ligula. Nulla convallis felis vitae diam vestibulum, ac fermentum erat hendrerit. Integer suscipit lorem massa, eu fermentum sapien vulputate at. Cras pretium risus a dui bibendum, sit amet blandit ipsum posuere. Ut hendrerit suscipit ante, consequat facilisis tellus facilisis vel. Donec tincidunt justo nulla, ut sollicitudin nisl suscipit et. Suspen                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl,                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl, interdum laoreet enim eu, ullamcorper accumsan ligula. Nulla convallis felis vitae diam vestibulum, ac fermentum erat hendrerit. Integer suscipit lorem massa, eu fermentum sapien vulputate at. Cras pretium risus a dui bibendum, sit amet blandit ipsum posuere. Ut hendrerit suscipit ante, consequat facilisis tellus facilisis vel. Donec tincidunt justo nulla, ut sollicitudin nisl suscipit et. Suspen                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl,                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras blandit erat id nunc porttitor suscipit. Etiam scelerisque justo vitae sollicitudin pulvinar. Praesent in tellus nulla. Aliquam erat nisl, interdum laoreet enim eu, ullamcorper accumsan ligula. Nulla convallis felis vitae diam vestibulum, ac fermentum erat hendrerit. Integer suscipit lorem massa, eu fermentum sapien vulputate at. Cras pretium risus a dui bibendum, sit amet blandit ipsum posuere. Ut hendrerit suscipit ante, consequat facilisis tellus facilisis vel. Donec tincidunt justo nulla, ut sollicitudin nisl suscipit et. Suspen                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ok                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Isisissi
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hh                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hjj                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Kntl                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ok syg                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                aaa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                aaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                qqqqqqqqqqqq                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                qqqqqqqqqqqqqqq                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                priyanto                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                SELAMAT...                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ri                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Jsjak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tggy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ggggy                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                X                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                S                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                A                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ASDA                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nns                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                bdbd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                jaka                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                nd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                aji doang                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hasrul                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Bagus                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                f                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                fff                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Wkwkw                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hoho                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                arya                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ngetes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ana                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Safira                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Samawa yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Indah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Awan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                A                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                A                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Mantap, happy Hondo2 seba                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Arpi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Gaplek                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Art                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Adiandari                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat LeiaKen                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Riani                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tesa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Sukses                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Cek                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rinda                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Sobari                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dimas                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Basrakallah semoga lancar dalam kehidopana                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Testing                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Puri                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Sakinah , Mawaddah , warahmah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Xa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hahaha                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mediana                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga dilancarkan semuanya ya kak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Barakallahu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Vvv                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Jj                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Adi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya dek                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rakjel                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat dek dgn pilihan mu, biar abang sakit hati sendiri yang penting adek bahagia meski bukan sama abang.                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Oke                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ciee                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tesss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asdf                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Susan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya. Semoga lancar sampai hari pelaminan.                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Demo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Demo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                samlekom                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hehe                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                TEST                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                TEST                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dillah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                P                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Makmur                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Testing
+
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                haha                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                hihi                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Angga                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                SaMaWa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Nizam                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ppp                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Abc                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tesss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Peter                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Jadi berasa di undang.  Padahal ga kenal. Gara gara liat demo undangan. Nanti ku datang ya 😁                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Yy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrast                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                TEST                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                AGS                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                asdasd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asdasd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                haha                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asdasd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                BAPAK                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                HAHAHA HIHI BACOT                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                AING JOMBLO                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                KUY NIKAH                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                G                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Qoni                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Testes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Yuhu                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Muslimah                             </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congratulations 🎊 😊                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ff                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                fff                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                gh                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ghgh                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Muhammad panca muliadi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Gw g kenal sih.  Tp gw mau ucapi 
+Hp wedding :)                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dewi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congratsss !                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mawar                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Yuhu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Arif                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat dekkeng                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Joni                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaaa Mas Tripati dan Mba Leiayu...                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Joni                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Sgg                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Dfgvbb                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                .                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                .                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                rrr                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                rrr                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                sssss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                aas                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Indra sutrisno                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga menjadi keluarga sakinnah mawaddah dan warrohmah                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Riantes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Yo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Yo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Alica                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Happy wedding, semoga menjadi keluarga samawa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Alica                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Happy wedding, semoga menjadi keluarga samawa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                fauzi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat ya kak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Biji                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tau ah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bagas                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat bahagia dengan pilihan mu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                h                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Fauzi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Mantap                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Gia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hey                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                afgansah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selmt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Eko                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Nice                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                afgansah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                sah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Abdul                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Barakallahualaik                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Cindy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Jjj                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                My                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Yuhu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Cc                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Fff                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ozi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test doang                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                myd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ddd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ddd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ryan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Fgg                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ghhj                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dendi Ramdani Sutandi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hai                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Iqbal                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Sukma                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Slamat ya :D                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ananda                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Vvxvbj                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mm                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Bbb                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tes ucapan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Amir                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa...                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Theks                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Oke                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tukijan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                hu mau nikah.                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                afri                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                rstu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Nkhn                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Testing                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ~~~                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                hmmmm                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aisyah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamaat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Anonim                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Keren Mas :)                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Selamat pagi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya yg jadi contoh                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tuti                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rakaniya.                             </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Wow                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                demo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                asd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aku siapa..                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Aku dimanaa?                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mira                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nur                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                fddsfsdfsdfs                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                fsdfsdfsdfsfdfs                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Udin                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat mantap mantap                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Romo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Uhuy                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Unknown                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa mba dan mas nya, semoga bahagia selaluuu🕊️✨
+Semoga saya segera dipertemukan dengan jodoh yang mengerti agama &amp; shaleh. Insyaallah doa baik akan berbalik. Aamiin😇                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                hi!                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                aaa selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mulyadi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Cieeeeee                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ziyad                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat Yaa
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                fasf                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Zeen ahmed                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga bahagia slalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Demo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Noki                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yah, semoga cepat dapat momongan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tessss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tessssss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes 1                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Love                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bella                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Love                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                wawan keren                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                lorem ipsum                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                wawan keren                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                lorem ipsum                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Coba                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ani                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamatttt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Kampungan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Dasar anda                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Jfjfjjf                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Samawa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Joni                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Mantap mantap                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Iqbal                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ngentot                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ngentot ya                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                sad                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                sad                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Fo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Rara                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamattt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Adit                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Mantap                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                jembut garing                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                enaaaakkkk                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ken                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Abimanyu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat berkemban biak kawan 💦                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                indah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat atas pernikahannya, semoga menjadi keluarga yg berbahagia                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Janoko                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ok                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Customer                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bu tedjo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Oke                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Kirito                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Chikitita                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga disegerakan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Chikitita                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga disegerakan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                reyza                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                semoga menjadi keluarga sakinah mawaddah wa rahmah dan saya menyusul menikah di tahun 2020 ini... allahumaamiin.                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                muhammad reyza ramadhan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                InsyaAllah.... saya menikah dengan fitria hafidzoh pada hari Minggu, tgl 1 November 2020                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                muhammad reyza ramadhan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                InsyaAllah saya akan menikah dengan Fitria Hafidzoh pada hari Minggu, 1 November 2020                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                muhammad reyza ramadhan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                InsyaAllah saya akan menikah dengan Fitria Hafidzoh pada hari Minggu, 1 November 2020                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                muhammad reyza ramadhan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                InsyaAllah saya akan menikah dengan Fitria Hafidzoh pada hari Minggu, 1 November 2020                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Wowo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selmat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                susu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                kental                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                R Besar                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Keren                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mantan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hiks                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                User                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat berbahagia                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                T                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aditya dan Gandhis                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga diberkahi                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Susu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Kental Manis                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Cook                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Thell                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                muhammad lzzudin Kota Tegal 2021 &amp; sofiatul azizah kota Tegal 2021                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                sofiatul azizah kota Tegal 2021 &amp; muhammad lzzudin Kota Tegal 2021                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                bebek                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                kwek kwek kwek                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                123                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Inot                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Slmt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                elian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat ngentot yaa crot dalem                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Irman                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                J                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ♥️                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Harman, S.Pd, MM                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat untuk Leia dan Pati, Semoga dilancarkan segala urusannya yaa, kelak menjadi keluarga yang Sakinah Mawadah Warohmah, selalu diberikan kebahagiaan dan keberkahan selalu, serta cepet dapet momongan, aamiin                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Syarif Hidayat                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hdhsjkandb                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mira                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Customer                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat..                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Johan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat menempuh hidup baru                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Agus zaka                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat y bro                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Xxxxx                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Cccc                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Nae                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ngetes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat kak hehe                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nada                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test ucapan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mrs. Y                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat kak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Siti                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                meidy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamattt yahhh                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Syarif                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ttesss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                tes nama                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tes ucapan                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                kita bersama                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                aku ganteng gaesaku ganteng gaesaku ganteng gaesaku ganteng gaesaku ganteng gaes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                aku ganteng gaesaku ganteng gaesaku ganteng gaesaku ganteng gaesaku ganteng gaesaku ganteng gaes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bool                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Udh ga tahan mau berak                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Unul                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Happy wedding, samawa 😍                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Anjay lutfi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Anjay mantap                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Welcome                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                &lt;script&gt;alert(123)&lt;/script&gt; &lt;script&gt;alert(“hellox worldss”);&lt;/script&gt; javascript:alert(“hellox worldss”) &lt;img src=”javascript:alert(‘XSS’);”&gt; &lt;img src=                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                &lt;script&gt;alert(123)&lt;/script&gt;
+&lt;script&gt;alert(“hellox worldss”);&lt;/script&gt;
+javascript:alert(“hellox worldss”)
+&lt;img src=”javascript:alert(‘XSS’);”&gt;
+&lt;img src=javascript:alert(&amp;quot;XSS&amp;quot;)&gt;
+&lt;”’;alert(String.fromCharCode(88,83,83))//’;alert(String.fromCharCode(88,83,83))//”;alert(String.fromCharCode(88,83,83))//”;alert(String.fromCharCode(88,83,83))// →&lt;/SCRIPT&gt;”&gt;’&gt;&lt;SCRIPT&gt;alert(String.fromCharCode(88,83,83))&lt;/SCRIPT&gt;
+&lt;META HTTP-EQUIV=”refresh” CONTENT=”0;url=data:text/html;base64,P                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                &lt;script&gt;alert(123)&lt;/script&gt;                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                &lt;script&gt;alert(123)&lt;/script&gt;                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                &lt;script&gt;alert(“hellox worldss”);&lt;/script&gt;                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                &lt;script&gt;alert(“hellox worldss”);&lt;/script&gt;                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                aaaddd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                aaaddd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                sss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                sss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ccdd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ccdd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Yol                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bunga                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamaaat 4 u both 😂                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tuti                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                eko                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                nisa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                anjar                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                hallo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Halo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                M                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                😭                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Agag                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ahshshs                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Vero                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                beben                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                happy wedding.. God Bless You 🥳🥳                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Pelakor                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Siap2 aku akan datang                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hsjsjs                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Bansjsjs                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tess                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Jjjj                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Kkkkk                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Jounaldo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hahahaha                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Y                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Y                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Putri                             </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Lucuuuu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hmm                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat semoga bahagia selalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamet ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Susilo adi saputra                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Kerennnnn banget cokkkk                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aku                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Bacot                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Cia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat yaaaa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Gh                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ryyy                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                maya                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                selamat ya langgeng terus                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                yg                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ttttttttt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tekun                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat atas pernikahan nya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ica                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Babang                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Baksooooo!                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Faroh                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ❣️❣️❣️                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Andre                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Slamay                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                MUHAMMAD NASRULLOH                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                test
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                As u wish                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                asssssssssssssssssssssssssss                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                hjhj                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                hvgh                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                jhj                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                dt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Lia                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Trial                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Nice                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ANAFI AULIANA                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat menikah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dodo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Wah selamat ya
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Sa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Test                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dian                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ejshsh                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Eea                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Eea                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Eea                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Eea                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bejo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Opo iki                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hehe                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hehe                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Seep                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                jupri                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                kontol                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Maduu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Samawa until jannah                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                                             </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                                             </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                asd                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                &lt;style&gt;#Moment{background-color: red}&lt;/style&gt;                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asd                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                arifin                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                arifin                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Alta                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ya                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Isvi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                happy wedding yaa lancar sampr hari H                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Bayu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Semoga Sehat &amp; Bahagia selalu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Coba tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                zz                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                zz                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Wawan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Kutunggu janda mU                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Zz                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hii                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Coba                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Yy lv raju                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Teni                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamattttttttt                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Mantan                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Siap-siap aku bawa anggoto buat demo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Yfgy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Rtf                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Agsdg                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Dgsxgb                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Hyy                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamaat
+                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                dody                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                happy wedding                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Anak                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat ulang tahun                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                a                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                a                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ok                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Ok                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Intut                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aiueo                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Aiueo                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Aja                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                test                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                waw                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                A                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ayaa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Huhuhehe                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ayu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Jangan lupa malam pertamanya videoin bro                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ame                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                restu                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                sela                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                wow                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ana                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat samawa                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                yuhu                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                &lt;! -                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Aaaa                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Tessss                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Tes                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                tes                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ricky                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hi World!                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Ca                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Hai                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Kuyung sok                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Congrats jok                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                ahah                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                asasas                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                sudar                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                ..                            </div>
+
+
+                                                
+                            <div class="wishdisplayname">
+                                Dilfi                            </div>
+
+                            <div class="" style="padding-bottom: 10px">
+                                Selamat menempuh                             </div>
+
+
+                                                
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div>
+                <br>
+                <div class="ornamentwdbtm" style="width: 100%; margin: 0px; text-align: center;">
+                <img src="images/vinbtmwd.png" alt="" style="display: inline-block;" width="100%">
+                </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <script>
+        function openPage(pageName, elmnt, color) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.backgroundColor = "";
+            }
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+
+
+            document.getElementById('mute-sound').style.display = 'none';
+            document.getElementById('unmute-sound').addEventListener('click', function (event) {
+                document.getElementById('unmute-sound').style.display = 'none';
+                document.getElementById('mute-sound').style.display = 'inline-block';
+                document.getElementById('song').play();
+            });
+
+            document.getElementById('mute-sound').addEventListener('click', function (event) {
+                document.getElementById('mute-sound').style.display = 'none';
+                document.getElementById('unmute-sound').style.display = 'inline-block';
+                document.getElementById('song').pause();
+            });
+
+
+        // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+
+        var deadline = new Date("march 28, 2020 13:00:00").getTime();
+
+            var x = setInterval(function () {
+
+                var now = new Date().getTime();
+                var t = deadline - now;
+                var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                document.getElementById("day").innerHTML = days;
+                document.getElementById("hour").innerHTML = hours;
+                document.getElementById("minute").innerHTML = minutes;
+                document.getElementById("second").innerHTML = seconds;
+                if (t < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "HAPPY WEDDING";
+                    document.getElementById("day").innerHTML = '0';
+                    document.getElementById("hour").innerHTML = '0';
+                    document.getElementById("minute").innerHTML = '0';
+                    document.getElementById("second").innerHTML = '0';
+                }
+            }, 1000);
+
+
+            function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            var sn = getParameterByName('to');
+
+            document.getElementById("write").innerHTML = sn;
+
+    </script>
+    <script type="text/javascript" src="template/jquery-1.10.1.min.js"></script>
+
+
+</body>
+
+</html>
