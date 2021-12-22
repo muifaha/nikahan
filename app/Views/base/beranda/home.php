@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
                     <h1 data-aos="fade-up"><a href="" class="typewrite judul" data-period="2000"
-                            data-type='[ "Undangancnk.online", "Digital Invitation", "Kirim Undangan..", "Desain Unik..", "Mudah diatur.."]'>
+                            data-type='[ "nikahankami.online", "Digital Invitation", "Kirim Undangan..", "Desain Unik..", "Mudah diatur.."]'>
                             <span class="wrap"></span>
                         </a></h1>
                     <h2 data-aos="fade-up" data-aos-delay="400">Solusi pernikahan lebih hemat, praktis, dan kekinian
@@ -251,7 +251,7 @@
     <footer id="footer" class="footer">
         <div class="container">
             <div class="copyright">
-                Copyright &#169; 2020  UndanganCnk . All Rights Reserved
+                Copyright &#169; 2020  NikahanKami . All Rights Reserved
             </div>
         </div>
     </footer><!-- End Footer -->
