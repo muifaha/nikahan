@@ -3,7 +3,7 @@
     <div class="row d-flex flex-column align-items-center">
             
             <div class="d-flex justify-content-center">
-                <a href="https://undangancnk.online/"><img src="http://undangancnk.online/assets/base/img/logo.png" height="50px"></a>
+                <a href="https://nikahankami.online/"><img src="http://nikahankami.online/assets/base/img/logo.png" height="50px"></a>
             </div>
 
             <div class="card shadow-sm mt-4" style='width:100%;max-width:400px'>

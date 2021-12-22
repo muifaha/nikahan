@@ -14,7 +14,7 @@
             <div class="row align-items-center">
               <div class="col mt-4">
                 <label>Nama Domain / URL Undangan</label>
-                <label style="bottom: -12.3px;position: inherit;padding-left: 20px;color: #3498db;font-weight: bold;display: table;margin-bottom: -1.2rem;">undangancnk.online/ </label>
+                <label style="bottom: -12.3px;position: inherit;padding-left: 20px;color: #3498db;font-weight: bold;display: table;margin-bottom: -1.2rem;">nikahankami.online/ </label>
                 <input name="domain" type="text" class="form-control" placeholder="  akudandia" style="padding-left: 155px;" value="<?php echo $domain; ?>"  onkeyup="nospaces(this)" required>
               </div>
             </div>

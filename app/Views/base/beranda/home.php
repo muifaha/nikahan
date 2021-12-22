@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>UNDANGANCNK - Digital Invitation </title>
+    <title>NIKAHAN KAMI - Digital Invitation </title>
     <link rel="icon" href="<?php echo base_url() ?>/assets/base/img/favicon.png">
 
     <!-- Required meta tags -->
@@ -256,7 +256,7 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="https://api.whatsapp.com/send?phone=6289667771377&amp;text=Assalamualaikum Admin UndanganCnk, saya mau bertanya." class="float" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=6289507202769&amp;text=Assalamualaikum Admin NikahanKami, saya mau bertanya." class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
 
 </a>
